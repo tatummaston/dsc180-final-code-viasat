@@ -163,6 +163,11 @@ def packet_linear_reg(df):
   #print("Mean squared error: %.2f" % mean_squared_error(y_test, y_pred))
   # The coefficient of determination: 1 is perfect prediction
   #print("Coefficient of determination: %.2f" % r2_score(y_test, y_pred))
+    
+    f = open("outputs/model_output.txt", "a")
+    f.write(f"linear regression packet loss r^2 score: {r2_score(y_test, y_pred)})
+    f.close()
+    
   
     return r2_score(y_test, y_pred) #r2_score(y_test.reset_index(drop=True), y_pred), y_test.reset_index(drop=True), y_pred
 
@@ -196,6 +201,12 @@ def latency_linear_reg(df):
 
   # The coefficient of determination: 1 is perfect prediction
   #print("Coefficient of determination: %.2f" % r2_score(y_test, y_pred))
+    
+    f = open("outputs/model_output.txt", "a")
+    f.write(f"linear regression latency r^2 score: {r2_score(y_test.reset_index(drop=True), y_pred)})
+    f.close()
+    
+    
     return r2_score(y_test.reset_index(drop=True), y_pred)#, y_test.reset_index(drop=True), y_pred
 
 
@@ -228,6 +239,10 @@ def decision_tree(df):
 
   # The coefficient of determination: 1 is perfect prediction
   #print("Coefficient of determination: %.2f" % r2_score(y_test, y_pred))
+            
+    f = open("outputs/model_output.txt", "a")
+    f.write(f"decision tree latency r^2 score: {clf.score(X_test, y_test.reset_index(drop=True))})
+    f.close()
 
     return clf.score(X_test, y_test.reset_index(drop=True))#, y_test.reset_index(drop=True), y_pred
   
@@ -259,5 +274,10 @@ def svm(df):
 
   # The coefficient of determination: 1 is perfect prediction
   #print("Coefficient of determination: %.2f" % r2_score(y_test, y_pred))
+                                                          
+    f = open("outputs/model_output.txt", "a")
+    f.write(f"svm latency r^2 score: {clf.score(X_test, y_test.reset_index(drop=True))})
+    f.close()                                                     
+                                                     
 
     return clf.score(X_test, y_test.reset_index(drop=True))#, y_test.reset_index(drop=True), y_pred
