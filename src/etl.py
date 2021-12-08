@@ -73,7 +73,7 @@ def avg_time_delt(a):
 #         data_list[i]['total_pkts'] = data_list[i]['1->2Pkts'] + data_list[i]['2->1Pkts']
         
         
-def latency_data_prep(file18, file19, file20)
+def latency_data_prep(file18, file19, file20):
     d20 = pd.read_csv(file18)
     d30 = pd.read_csv(file19)
     d10 = pd.read_csv(file20)
@@ -121,7 +121,7 @@ def loss_data_prep(file1, file2, file3):
     
     full_df = pd.concat([agg_200_5000, agg_200_500, agg_200_750])
     
-    return loss_data_prep
+    return full_df
 
 
 def packet_linear_reg(df):

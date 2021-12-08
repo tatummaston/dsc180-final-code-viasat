@@ -11,8 +11,6 @@ def main(targets):
 
     if 'data' in targets:
         latency_data_prep(**data_config)
-        
-    if 'loss' in targets:
         loss_data_prep(**data_config)
 
     if 'test' in targets:
