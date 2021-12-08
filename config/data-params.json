@@ -1,0 +1,9 @@
+{
+    "file18": "test/testdata/latency changes/20211110T224016_20-10000-iperf.csv"
+    "file19": "test/testdata/latency changes/20211110T224017_30-10000-iperf.csv"
+    "file20": "test/testdata/latency changes/20211110T224018_10-10000-iperf.csv"
+    "file1": "test/testdata/packet loss changes/20211015T175337_200-5000-iperf.csv"
+    "file2": "test/testdata/packet loss changes/20211023T012228_200-500-iperf.csv"
+    "file3": "test/testdata/packet loss changes/20211023T012231_200-750-iperf.csv"
+    
+}
