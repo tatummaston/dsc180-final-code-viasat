@@ -73,7 +73,7 @@ def avg_time_delt(a):
 #         data_list[i]['total_pkts'] = data_list[i]['1->2Pkts'] + data_list[i]['2->1Pkts']
         
         
-def latency_data_prep(file18, file19, file20)
+def latency_data_prep(file18, file19, file20):
     d20 = pd.read_csv(file18)
     d30 = pd.read_csv(file19)
     d10 = pd.read_csv(file20)
