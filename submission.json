@@ -1,0 +1,4 @@
+{
+    "dockerhub-id": tmaston/finalreport
+    "build-script": "python run.py"
+}
