@@ -121,7 +121,7 @@ def loss_data_prep(file1, file2, file3):
     
     full_df = pd.concat([agg_200_5000, agg_200_500, agg_200_750])
     
-    return loss_data_prep
+    return full_df
 
 
 def packet_linear_reg(df):
